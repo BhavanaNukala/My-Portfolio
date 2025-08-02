@@ -1,144 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Portfolio</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <section id="intro" class="py-5 bg-light">
-      <div class="container text-center">
-        <h5>Hey! I am</h5>
-        <h1>Bhavana Nukala</h1>
-        <h4>I'm a Web Developer.</h4>
-      </div>
-    </section>
+<head>  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bhavana Nukala</title>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet">
+</head>
 
-    <section id="education" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Education</h2>
+<body>
 
-        <div class="row mb-4">
-          <div class="col-md-4">
-            <h6>2021-2025</h6>
-          </div>
-          <div class="col-md-8">
-            <h4>Bachelor of Technology in Electrical Engineering</h4>
-            <p>Kakatiya Institute of Technology and Science</p>
-          </div>
-        </div>
-
-        <div class="row mb-4">
-          <div class="col-md-4">
-            <h6>2019-2021</h6>
-          </div>
-          <div class="col-md-8">
-            <h4>Intermediate</h4>
-            <p>SR Junior College</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <h6>2018-2019</h6>
-          </div>
-          <div class="col-md-8">
-            <h4>Schooling</h4>
-            <p>Tejaswi High School</p>
-          </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">Bhavana Nukala</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" href="#">Home</a>
+          <a class="nav-link" href="#education">About</a>
+          <a class="nav-link" href="#section1">Resume</a>
+          <a class="nav-link" href="#Projects">Projects</a>
+          <a class="nav-link" href="#contacts">Contact</a>
         </div>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <section id="skills" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Skills</h2>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label>HTML</label>
-            <div class="progress">
-              <div class="progress-bar" style="width: 95%">95%</div>
-            </div>
+  <!-- Intro Section -->
+  <section id="intro" class="py-5 bg-light">
+    <div class="container text-center name">
+      <h5>Hey! I am</h5>
+      <h1 class="fw-bold">Bhavana Nukala</h1>
+      <h4 class="text-muted">I'm a Web Developer.</h4>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="section1" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <img src="finalp.jpg" alt="Bhavana Nukala" class="img-fluid rounded">
+        </div>
+        <div class="col-lg-6">
+          <h2>About Me</h2>
+          <p>My name is Bhavana Nukala, an electrical engineer at KITSW and an aspiring Web Developer.</p>
+          <a href="#" class="btn btn-primary">Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Education</h2>
+
+      <div class="mb-4">
+        <h6>2021-2025</h6>
+        <h4>B.Tech in Electrical Engineering</h4>
+        <p><strong>Kakatiya Institute of Technology and Science</strong></p>
+        <p>Focusing on electrical systems, circuits, and power distribution, and applying concepts through practical learning.</p>
+      </div>
+
+      <div>
+        <h6>2019-2021</h6>
+        <h4>Higher Secondary Education</h4>
+        <p><strong>T.S.R.J.C Nekkonda</strong></p>
+        <p>Studied Physics, Chemistry, and Mathematics with practical exposure through hands-on projects and experiments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Skills</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <h5>Web Development</h5>
+          <div class="progress"><div class="progress-bar" style="width: 90%;">90%</div></div>
+        </div>
+        <div class="col-md-6">
+          <h5>C</h5>
+          <div class="progress"><div class="progress-bar" style="width: 80%;">80%</div></div>
+        </div>
+        <div class="col-md-6">
+          <h5>Java</h5>
+          <div class="progress"><div class="progress-bar" style="width: 75%;">75%</div></div>
+        </div>
+        <div class="col-md-6">
+          <h5>Web Design</h5>
+          <div class="progress"><div class="progress-bar" style="width: 90%;">90%</div></div>
+        </div>
+        <div class="col-md-6">
+          <h5>jQuery</h5>
+          <div class="progress"><div class="progress-bar" style="width: 85%;">85%</div></div>
+        </div>
+        <div class="col-md-6">
+          <h5>HTML5</h5>
+          <div class="progress"><div class="progress-bar" style="width: 95%;">95%</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="Projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">My Projects</h2>
+      <ul class="nav nav-tabs justify-content-center mb-3" id="myTab" role="tablist">
+        <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#project1">Project 1</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#project2">Project 2</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#project3">Project 3</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#project4">Project 4</button></li>
+        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#project5">Project 5</button></li>
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane fade show active" id="project1">
+          <img src="dawnn.PNG" class="img-fluid mb-3" alt="Dawnn Restaurant">
+          <p>Dawnn Restaurant is a sleek and functional design project crafted with HTML & CSS.</p>
+          <p><a href="https://underdog28.github.io/dawnn/" target="_blank">View Project</a></p>
+        </div>
+        <div class="tab-pane fade" id="project2">
+          <img src="diceGame.PNG" class="img-fluid mb-3" alt="Dice Game">
+          <p>A fun dice-rolling game made using HTML, CSS & JS.</p>
+          <p><a href="https://thepalnati015.github.io/dice-game/" target="_blank">Play Game</a></p>
+        </div>
+        <div class="tab-pane fade" id="project3">
+          <img src="drumKit.PNG" class="img-fluid mb-3" alt="Drum Kit">
+          <p>Interactive Drum Kit app to simulate drum beats online.</p>
+          <p><a href="https://thepalnati015.github.io/drum-kit/" target="_blank">Try It</a></p>
+        </div>
+        <div class="tab-pane fade" id="project4">
+          <img src="simonGame.PNG" class="img-fluid mb-3" alt="Simon Game">
+          <p>A memory game to repeat color patterns. Built using JavaScript.</p>
+          <p><a href="https://thepalnati015.github.io/The-Simon-Game/" target="_blank">Play Now</a></p>
+        </div>
+        <div class="tab-pane fade" id="project5">
+          <img src="calc.PNG" class="img-fluid mb-3" alt="Calculator App">
+          <p>A sleek calculator for basic arithmetic operations.</p>
+          <p><a href="https://thepalnati015.github.io/The-Simon-Game/" target="_blank">Try It</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hire Me Section -->
+  <section id="hire" class="py-5 text-center">
+    <div class="container">
+      <h2>I’m available for freelancing</h2>
+      <p>With a keen eye for design and a passion for web technologies, I'm ready to bring your ideas to life.</p>
+      <button class="btn btn-dark">Hire Me</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contacts" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Contact Me</h2>
+      <form>
+        <div class="row g-3">
+          <div class="col-md-6"><input type="text" class="form-control" placeholder="Your Name"></div>
+          <div class="col-md-6"><input type="email" class="form-control" placeholder="Your Email"></div>
+          <div class="col-12"><input type="text" class="form-control" placeholder="Subject"></div>
+          <div class="col-12"><textarea class="form-control" rows="4" placeholder="Message"></textarea></div>
+        </div>
+        <div class="text-center mt-3">
+          <input type="submit" value="Submit" class="btn btn-primary">
+        </div>
+      </form>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-5 text-center">
+        <div class="col">
+          <div class="card h-100 p-3">
+            <h5>📍 Address</h5>
+            <p>Nerada, Mahabubabad</p>
           </div>
-          <div class="col-md-6 mb-3">
-            <label>CSS</label>
-            <div class="progress">
-              <div class="progress-bar" style="width: 90%">90%</div>
-            </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3">
+            <h5>📞 Phone</h5>
+            <p>+91 6302620932</p>
           </div>
-          <div class="col-md-6 mb-3">
-            <label>JavaScript</label>
-            <div class="progress">
-              <div class="progress-bar" style="width: 85%">85%</div>
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label>React</label>
-            <div class="progress">
-              <div class="progress-bar" style="width: 80%">80%</div>
-            </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 p-3">
+            <h5>📧 Email</h5>
+            <p>nukalabhavana15@gmail.com</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="projects" class="py-5">
-      <div class="container">
-        <h2 class="text-center mb-4">Projects</h2>
-        <ul class="nav nav-tabs mb-4" role="tablist">
-          <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="tab" href="#dawnn">Dawnn Restaurant</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#card">Card Animation</a>
-          </li>
-        </ul>
-        <div class="tab-content">
-          <div class="tab-pane fade show active" id="dawnn">
-            <img src="dawnn.PNG" class="img-fluid mb-3" alt="Dawnn Restaurant" />
-          </div>
-          <div class="tab-pane fade" id="card">
-            <img src="card1.PNG" class="img-fluid mb-3" alt="Card Animation" />
-          </div>
-        </div>
-      </div>
-    </section>
+  <!-- Footer -->
+  <footer class="py-3 text-center">
+    <p class="mb-0">&copy; 2024 Bhavana Nukala. All rights reserved.</p>
+  </footer>
 
-    <section id="contact" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="text-center mb-4">Contact Me</h2>
-        <form>
-          <div class="row">
-            <div class="col-md-6 mb-3">
-              <input type="text" class="form-control" placeholder="Your name" />
-            </div>
-            <div class="col-md-6 mb-3">
-              <input type="email" class="form-control" placeholder="Email" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 mb-3">
-              <input type="text" class="form-control" placeholder="Subject" />
-            </div>
-            <div class="col-12 mb-3">
-              <textarea class="form-control" rows="4" placeholder="Message"></textarea>
-            </div>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary">Send Message</button>
-          </div>
-        </form>
-      </div>
-    </section>
-
-    <footer class="text-center py-4">
-      &copy; 2025 Bhavana Nukala
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
